@@ -21,7 +21,11 @@ addListeners();
 
 function showJamesList() {
     jamesBGColor.classList.add('fade-in-bg');
+    jamesBGColorF.classList.add('fade-in-bg');
     nateBGColor.classList.remove('fade-in-bg');
+    nateBGColorF.classList.remove('fade-in-bg');
+
+
 
     jamesButton.classList.add('selectedList');
     jamesList.classList.add('fade');
@@ -32,7 +36,10 @@ function showJamesList() {
 }
 function showNateList() {
     nateBGColor.classList.add('fade-in-bg');
+    nateBGColorF.classList.add('fade-in-bg');
     jamesBGColor.classList.remove('fade-in-bg');
+    jamesBGColorF.classList.remove('fade-in-bg');
+
 
 
     nateButton.classList.add('selectedList');
