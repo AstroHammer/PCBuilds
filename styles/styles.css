@@ -108,7 +108,7 @@ section {
     position: relative;
     max-width: 1400px;
     margin: 50px auto 0 auto;
-    height: 1900px;
+    height: 2050px;
 }
 .james-build, .nate-build {
     display: flex;
