@@ -53,6 +53,7 @@ header {
 }
 @keyframes switchBG {
     100% {
+        transition: opacity .5s linear;
         opacity: 1;
     }
 }
