@@ -30,7 +30,7 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
-    transition: opacity .5s linear;
+    
 }
 .james-bg {
     background: linear-gradient(#28b571, #38239e);
@@ -50,6 +50,7 @@ header {
 }
 .change-bg {
     animation: switchBG .5s linear;
+    transition: opacity .5s linear;
 }
 @keyframes switchBG {
     100% {
