@@ -221,10 +221,10 @@ section {
     margin-top: 5px;
 }
 .james-links {
-    background: linear-gradient(#34eb92, #5234eb);
+    background: linear-gradient(#34eb92, #38239e);
 }
 .nate-links {
-    background: linear-gradient(#eb3434, #9319da);
+    background: linear-gradient(#eb3434, #3b005e);
 }
 .link:active {
     padding: .2rem .7rem;
