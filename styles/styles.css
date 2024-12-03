@@ -6,7 +6,6 @@
 body {
     background: black;
     position: relative;
-
 }
 .page-title {
     text-align: center;
@@ -109,7 +108,7 @@ section {
     position: relative;
     max-width: 1400px;
     margin: 50px auto 0 auto;
-    height: 1400px;
+    height: 1900px;
 }
 .james-build, .nate-build {
     display: flex;
@@ -137,7 +136,9 @@ section {
 .pc-item {
     font-size: 2.5rem;
     font-family: "Jaro";
+    position: relative;
     color: rgb(212, 212, 212);
+    margin-bottom: 10px;
 }
 .strict-or-splurge {
     padding-top: .3rem;
@@ -147,12 +148,67 @@ section {
     align-items: center;
     flex-wrap: wrap;
 }
+.strict, .splurge {
+    font-family: "Jaro";
+    color: rgb(209, 209, 209);
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
 .strict-container, .splurge-container {
     display: flex;
     flex-direction: column;
 }
-.item-link {
-    padding-top: .3rem;
+.CO-opt-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.co-opt-svg {
+    height: 20px;
+    width: 100px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.price {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+.comment {
+    display: block;
+    font-variant: small-caps;
+}
+.case::after {
+    content:'*hard to get';
+    position: absolute;
+    font-size: .7rem;
+    font-family: "Times New Roman";
+    top: 15%;
+}
+.monitor::after {
+    content:'*missed the $180 deal :(';
+    position: absolute;
+    font-size: .7rem;
+    font-family: "Times New Roman";
+    top: 15%;
+}
+.walmart {
+    background-image: url('/styles/walmart-logo-svgrepo-com.svg');
+}
+.newegg {
+    background-image: url('/styles/newegg-svgrepo-com.svg');
+}
+.amazon {
+    background-image: url('/styles/amazon-2-logo-svgrepo-com.svg');
+}
+.bestbuy {
+    background-image: url('/styles/best-buy.svg');
+    background-size: 50px 100px;
+}
+.microcenter {
+    background-image: url('/styles/micro-center.svg');
 }
 .link {
     text-decoration: none;
@@ -162,6 +218,7 @@ section {
     padding: .5rem 1rem;
     border-radius: 20px;
     font-size: clamp(.8rem, 3vw, 1.2rem);
+    margin-top: 5px;
 }
 .james-links {
     background: linear-gradient(#34eb92, #5234eb);
@@ -194,4 +251,7 @@ section {
         transform: translateX(-50%) translateY(0px);
         opacity: 1;
     }
+}
+a {
+    display: inline-block;
 }

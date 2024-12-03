@@ -1,3 +1,8 @@
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
+
 const jamesButton = document.querySelector('.james');
 const nateButton = document.querySelector('.nate');
 const jamesList = document.querySelector('.james-build');
