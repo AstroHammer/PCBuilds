@@ -33,20 +33,20 @@ header {
     transition: opacity .5s linear;
 }
 .james-bg {
-    background: linear-gradient(#34eb92, #38239e);
+    background: linear-gradient(#28b571, #38239e);
     box-shadow: 0 0 20px 20px #38239e;
 }
 .nate-bg {
-    background: linear-gradient(#eb3434, #3b005e);
-    box-shadow: 0 0 20px 20px #3b005e;
+    background: linear-gradient(#3462eb, #8300cf 70%);
+    box-shadow: 0 0 20px 20px #8300cf;
 }
 .james-bg-F {
-    background: linear-gradient(#38239e, #34eb92);
+    background: linear-gradient(#38239e, #28b571);
     box-shadow: 0 0 20px 20px #38239e;
 }
 .nate-bg-F {
-    background: linear-gradient(#3b005e,#eb3434);
-    box-shadow: 0 0 20px 20px #3b005e;
+    background: linear-gradient(#8300cf,#3462eb);
+    box-shadow: 0 0 20px 20px #8300cf;
 }
 .change-bg {
     animation: switchBG .5s linear;
@@ -221,10 +221,10 @@ section {
     margin-top: 5px;
 }
 .james-links {
-    background: linear-gradient(#34eb92, #38239e);
+    background: linear-gradient(#28b571, #38239e);
 }
 .nate-links {
-    background: linear-gradient(#eb3434, #3b005e);
+    background: linear-gradient(#3462eb, #8300cf);
 }
 .link:active {
     padding: .2rem .7rem;
