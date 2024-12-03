@@ -20,36 +20,27 @@ function addListeners() {
 addListeners();
 
 function showJamesList() {
+    jamesBGColor.classList.add('fade-in-bg');
+    nateBGColor.classList.remove('fade-in-bg');
+
     jamesButton.classList.add('selectedList');
     jamesList.classList.add('fade');
     nateButton.classList.remove('selectedList');
     jamesList.classList.remove('hide');
     nateList.classList.add('hide');
     nateList.classList.remove('fade');
-    jamesBGColor.classList.remove('hide');
-    jamesBGColor.classList.add('change-bg');
-    nateBGColor.classList.add('hide');
-    nateBGColor.classList.remove('change-bg');
-    jamesBGColorF.classList.remove('hide');
-    jamesBGColorF.classList.add('change-bg');
-    nateBGColorF.classList.add('hide');
-    nateBGColorF.classList.remove('change-bg');
 }
 function showNateList() {
+    nateBGColor.classList.add('fade-in-bg');
+    jamesBGColor.classList.remove('fade-in-bg');
+
+
     nateButton.classList.add('selectedList');
     nateList.classList.add('fade');
     jamesButton.classList.remove('selectedList');
     nateList.classList.remove('hide');
     jamesList.classList.add('hide');
     jamesList.classList.remove('fade');
-    nateBGColor.classList.remove('hide');
-    nateBGColor.classList.add('change-bg');
-    jamesBGColor.classList.add('hide');
-    jamesBGColor.classList.remove('change-bg');
-    nateBGColorF.classList.remove('hide');
-    nateBGColorF.classList.add('change-bg');
-    jamesBGColorF.classList.add('hide');
-    jamesBGColorF.classList.remove('change-bg');
 }
 
 

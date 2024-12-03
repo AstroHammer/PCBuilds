@@ -31,6 +31,7 @@ header {
     height: 100%;
     position: absolute;
     transition: opacity .5s linear;
+    opacity: 0;
 }
 .james-bg {
     background: linear-gradient(#28b571, #38239e);
@@ -48,14 +49,20 @@ header {
     background: linear-gradient(#8300cf 25%,#3462eb);
     box-shadow: 0 0 20px 20px #8300cf;
 }
-.change-bg {
-    animation: switchBG .5s linear;
-    transition: opacity .5s linear;
+.fade-in-bg {
+    animation: fadeInBG .5s linear forwards;
 }
-@keyframes switchBG {
+.fade-out-bg {
+    animation: fadeOutBG .5s linear forwards;
+}
+@keyframes fadeInBG {
     100% {
-        transition: opacity .5s linear;
         opacity: 1;
+    }
+}
+@keyframes fadeOutBG {
+    100% {
+        opacity: 0;
     }
 }
 footer {
@@ -244,7 +251,6 @@ section {
     text-decoration: underline;
 }
 .fade {
-    
     animation: animateText .4s linear forwards;
 }
 
