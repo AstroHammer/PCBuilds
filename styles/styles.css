@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    position: relative;
+
+}
+.page-title {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+.select-list {
+    color: white;
+    position: relative;
+    z-index: 99;
+}
+header {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity .5s linear;
+}
+.james-bg {
+    background: linear-gradient(#34eb92, #38239e);
+    box-shadow: 0 0 20px 20px #38239e;
+}
+.nate-bg {
+    background: linear-gradient(#eb3434, #3b005e);
+    box-shadow: 0 0 20px 20px #3b005e;
+}
+.james-bg-F {
+    background: linear-gradient(#38239e, #34eb92);
+    box-shadow: 0 0 20px 20px #38239e;
+}
+.nate-bg-F {
+    background: linear-gradient(#3b005e,#eb3434);
+    box-shadow: 0 0 20px 20px #3b005e;
+}
+.change-bg {
+    animation: switchBG .5s linear;
+}
+@keyframes switchBG {
+    100% {
+        opacity: 1;
+    }
+}
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+header h1 {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 4px white;
+    font-family: "Jaro";
+    letter-spacing: .3rem;
+}
+section {
+    height: 50px;
+    margin-top: 50px;
+    color: white;
+}
+.separate-container {
+    width: 300px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.border {
+    height: 100%;
+    border-left: 1px solid white;
+}
+.james, .nate {
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: "Jaro";
+    width: 50%;
+}
+.james:hover, .nate:hover {
+    text-shadow: 0 0 3px white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+.details-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 50px auto 0 auto;
+    height: 1400px;
+}
+.james-build, .nate-build {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(200px);
+    width: 100%;
+}
+.james-build {
+    opacity: 0;
+}
+.nate-build {
+    opacity: 0;
+}
+.item-section {
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 400px;
+}
+.pc-item {
+    font-size: 2.5rem;
+    font-family: "Jaro";
+    color: rgb(212, 212, 212);
+}
+.strict-or-splurge {
+    padding-top: .3rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.strict-container, .splurge-container {
+    display: flex;
+    flex-direction: column;
+}
+.item-link {
+    padding-top: .3rem;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    font-size: clamp(.8rem, 3vw, 1.2rem);
+}
+.james-links {
+    background: linear-gradient(#34eb92, #5234eb);
+}
+.nate-links {
+    background: linear-gradient(#eb3434, #9319da);
+}
+.link:active {
+    padding: .2rem .7rem;
+}
+.part-list-title {
+    font-size: 1.3rem;
+}
+
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+.selectedList {
+    text-decoration: underline;
+}
+.fade {
+    
+    animation: animateText .4s linear forwards;
+}
+
+@keyframes animateText {
+    100% {
+        transform: translateX(-50%) translateY(0px);
+        opacity: 1;
+    }
+}
