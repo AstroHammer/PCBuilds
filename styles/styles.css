@@ -45,7 +45,7 @@ header {
     box-shadow: 0 0 20px 20px #38239e;
 }
 .nate-bg-F {
-    background: linear-gradient(#8300cf,#3462eb);
+    background: linear-gradient(#8300cf 25%,#3462eb);
     box-shadow: 0 0 20px 20px #8300cf;
 }
 .change-bg {
