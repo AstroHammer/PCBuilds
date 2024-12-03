@@ -39,8 +39,8 @@ function showNateList() {
     nateButton.classList.add('selectedList');
     nateList.classList.add('fade');
     jamesButton.classList.remove('selectedList');
-    jamesList.classList.add('hide');
     nateList.classList.remove('hide');
+    jamesList.classList.add('hide');
     jamesList.classList.remove('fade');
     nateBGColor.classList.remove('hide');
     nateBGColor.classList.add('change-bg');
