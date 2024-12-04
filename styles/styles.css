@@ -203,6 +203,13 @@ section {
     font-family: "Times New Roman";
     top: 15%;
 }
+.motherboard::after {
+    content: '*missed $175 deal :(';
+    position: absolute;
+    font-size: .7rem;
+    font-family: "Times New Roman";
+    top: 15%;
+}
 .walmart {
     background-image: url('/styles/walmart-logo-svgrepo-com.svg');
 }
