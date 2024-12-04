@@ -20,6 +20,7 @@ function addListeners() {
 addListeners();
 
 function showJamesList() {
+    
     jamesBGColor.classList.add('fade-in-bg');
     jamesBGColorF.classList.add('fade-in-bg');
     nateBGColor.classList.remove('fade-in-bg');
