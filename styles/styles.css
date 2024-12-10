@@ -117,7 +117,7 @@ section {
     position: relative;
     max-width: 1400px;
     margin: 50px auto 0 auto;
-    height: 2050px;
+    height: 2200px;
 }
 .james-build, .nate-build {
     display: flex;
@@ -167,11 +167,11 @@ section {
     display: flex;
     flex-direction: column;
 }
-.CO-opt-wrapper {
+/* .CO-opt-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
+} */
 .co-opt-svg {
     height: 20px;
     width: 100px;
@@ -189,13 +189,6 @@ section {
     display: block;
     font-variant: small-caps;
 }
-.case::after {
-    content:'*hard to get';
-    position: absolute;
-    font-size: .7rem;
-    font-family: "Times New Roman";
-    top: 15%;
-}
 .monitor::after {
     content:'*missed the $180 deal :(';
     position: absolute;
@@ -207,6 +200,14 @@ section {
     content: '*missed $175 deal :(';
     position: absolute;
     font-size: .7rem;
+    font-family: "Times New Roman";
+    top: 15%;
+}
+.pc-fans::after {
+    content: 'x2';
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: 5px;
     font-family: "Times New Roman";
     top: 15%;
 }
